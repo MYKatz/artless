@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    {%- include header.html -%}
+    {%- include nav.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    <div class="posts wrapper">
+      {%- for post in site.posts -%}
+        <a class="post-link" href="{{ post.url | relative_url}}"> {{ post.title | escape}} </a>
+        <span class="post-info">{{ post.date }}</span>
+      {%- endfor -%}
+    </div>
+  </body>
+
+</html>
