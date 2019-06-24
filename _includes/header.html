@@ -1,6 +1,6 @@
 <div class="header">
     {% if site.customHeader %}
-        <div class="title">{{ site.customHeader }}</div>
+        <a class="title" href="{{ "/" | relative_url }}">{{ site.customHeader }}</a>
     {% else %}
         <div class="title">{{ site.title }}</div>
     {% endif %}
