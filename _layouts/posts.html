@@ -14,8 +14,9 @@
     </main>
     <div class="posts wrapper">
       {%- for post in site.posts -%}
+        {%- assign link = post.link_out | default: post.url | relative_url -%}
         <div class="post-sample">
-          <a class="post-link" href="{{ post.url | relative_url}}">{{ post.title | escape}}</a>
+          <a class="post-link" href="{{ link | relative_url}}">{{ post.title | escape}}</a>
           <span class="post-info">{{ post.date | date: date_format }}</span>
           <div class="post-content">{{ post.content | truncatewords: 100 }}</div>
         </div>
