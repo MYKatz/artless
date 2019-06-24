@@ -1,8 +1,33 @@
 .header{
     text-align: center;
     margin: auto;
-    width: 60%;
+    width: 70%;
     padding: 5px;
+}
+
+.nav {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+
+.current{
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.rest{
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+.rest-content{
+    margin-top: auto
+}
+
+.navitem{
+    text-decoration: underline !important;
 }
 
 .title{
