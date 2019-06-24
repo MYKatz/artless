@@ -47,3 +47,9 @@
     margin-left: 1.25rem;
     margin-right: 1.25rem;
 }
+
+.wrapper {
+    width: 70%;
+    margin: auto;
+    font-size: 1.25rem;
+}

@@ -16,6 +16,7 @@ links:
       name: Medium
 
 
-sass:
-    sass_dir: _sass
-    style: compressed
+header_pages: #optional, use this to dictate page order in the navbar, or to exclude certain pages.
+    - index.md
+    - about.md
+    - lima.md
