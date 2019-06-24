@@ -4,6 +4,7 @@ title: Your title
 #optional
 customHeader: Katz #if you want the header text to be different than your site title
 subheader: Life is not a problem to be solved, but a reality to be experienced
+date_format: "%b %-d, %Y" #custom date formatting for blog posts
 
 links:
     - url: https://github.com/mykatz

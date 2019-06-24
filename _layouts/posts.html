@@ -2,6 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
+  {%- assign date_format = site.data_format | default: "%b %-d, %Y" -%}
 
   <body>
     {%- include header.html -%}
@@ -13,8 +14,12 @@
     </main>
     <div class="posts wrapper">
       {%- for post in site.posts -%}
-        <a class="post-link" href="{{ post.url | relative_url}}"> {{ post.title | escape}} </a>
-        <span class="post-info">{{ post.date }}</span>
+        <div class="post-sample">
+          <a class="post-link" href="{{ post.url | relative_url}}">{{ post.title | escape}}</a>
+          <span class="post-info">{{ post.date | date: date_format }}</span>
+          <p>{{ post.content | truncatewords: 100 }}</p>
+        </div>
+        <hr class="separator">
       {%- endfor -%}
     </div>
   </body>

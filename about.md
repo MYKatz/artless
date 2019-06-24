@@ -4,4 +4,4 @@ title: Posts
 permalink: /posts/
 ---
 
-About me!
+Here are some of my thoughts:
